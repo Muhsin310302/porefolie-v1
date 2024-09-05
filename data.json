@@ -1,19 +1,9 @@
 {
   "projects": [
     {
-      "title": "Muhsin",
-      "description": "isdnaidsu",
-      "link": "https://example.com/html"
-    },
-    {
-      "title": "aeffae",
-      "description": "sesavvsd",
-      "link": "https://example.com/html"
-    },
-    {
-      "title": "fssef",
-      "description": "esfesf",
-      "link": "https://example.com/html"
+      "title": "First project",
+      "description": "This is my first project",
+      "link": "https://github.com/Muhsin310302/porefolie-v1"
     }
   ]
 }
