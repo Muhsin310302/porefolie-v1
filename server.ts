@@ -36,9 +36,9 @@ app.post("/projects", async (c) => {
     const jsonData = JSON.parse(data);
     jsonData.projects.push(newProject);
     await writeFile("./data.json", JSON.stringify(jsonData, null, 2), "utf-8");
-    return c.json({ message: "Project added successfully", project: newProject });
+    return c.json({ message: "Prosjekt added", project: newProject });
 });
 
 const port = 3999;
 serve({ fetch: app.fetch, port });
-console.log(`Server running on port ${port}`);
+console.log(`Server is running on ${port}`);

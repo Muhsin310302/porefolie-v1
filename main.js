@@ -1,19 +1,17 @@
-// Get references to DOM elements
+
 /*const projectList = document.getElementById('Pro');
 const projectForm = document.getElementById('project-form');
 
-// Function to save projects to LocalStorage
+
 const saveProjectsToLocalStorage = (projects) => {
     localStorage.setItem('projects', JSON.stringify(projects));
 };
 
-// Function to get projects from LocalStorage
 const getProjectsFromLocalStorage = () => {
     const savedProjects = localStorage.getItem('projects');
     return savedProjects ? JSON.parse(savedProjects) : [];
 };
 
-// Function to add a project to the UI
 const addProjectToUI = (project) => {
     const projectDiv = document.createElement('div');
     projectDiv.classList.add('project');
@@ -29,52 +27,41 @@ const addProjectToUI = (project) => {
     projectLink.textContent = "View Project";
     projectLink.target = "_blank"; // Open in a new tab
 
-    // Append elements to the project div
+    
     projectDiv.appendChild(projectTitle);
     projectDiv.appendChild(projectDescription);
     projectDiv.appendChild(projectLink);
-
-    // Append the project div to the project list container
+    
     projectList.appendChild(projectDiv);
 };
-
-// Function to load all projects from LocalStorage and display them on the page
 const loadProjects = () => {
     const projects = getProjectsFromLocalStorage();
     projects.forEach(addProjectToUI); // Add each project to the UI
 };
 
-// Function to handle form submission
 const handleFormSubmit = (event) => {
     event.preventDefault(); // Prevent form submission from refreshing the page
-
-    // Get form data
+    
     const title = projectForm.title.value;
     const description = projectForm.description.value;
     const link = projectForm.link.value;
 
     const newProject = { title, description, link };
-
-    // Add the new project to the UI
+    
     addProjectToUI(newProject);
-
-    // Get the current projects from LocalStorage
+    
     const projects = getProjectsFromLocalStorage();
-
-    // Add the new project to the list of projects
+    
     projects.push(newProject);
-
-    // Save the updated list of projects to LocalStorage
+    
     saveProjectsToLocalStorage(projects);
-
-    // Clear the form
+    
     projectForm.reset();
 };
 
-// Attach event listener to form
 projectForm.addEventListener('submit', handleFormSubmit);
 
-// Load and display projects on page load
+
 document.addEventListener('DOMContentLoaded', loadProjects);*/
 
 document.addEventListener('DOMContentLoaded', async () => {
