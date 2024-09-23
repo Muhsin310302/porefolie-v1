@@ -64,6 +64,8 @@ projectForm.addEventListener('submit', handleFormSubmit);
 
 document.addEventListener('DOMContentLoaded', loadProjects);*/
 
+
+
 document.addEventListener('DOMContentLoaded', async () => {
     const projectListContainer = document.getElementById('Pro');
     const projectForm = document.getElementById('project-form');

@@ -13,10 +13,6 @@ app.get("/", async (c) => {
     return c.html(html);
 });
 
-app.get("/style.css", async (c) => {
-    const css = await readFile(path.join(__dirname, "./style.css"), "utf-8");
-    return c.body(css, 200, { "Content-Type": "text/css" });
-});
 
 app.get("/main.js", async (c) => {
     const js = await readFile(path.join(__dirname, "./main.js"), "utf-8");
