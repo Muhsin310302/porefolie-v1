@@ -1,16 +1,16 @@
 import React from 'react';
 
-type AddList = {
+type DisList = {
   title: string;
   description: string;
   link: string;
 };
 
-type ProjectListProps = {
-  projects: AddList[];
+type ListProps = {
+  projects: DisList[];
 };
 
-const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
+const ProjectList: React.FC<ListProps> = ({ projects }) => {
   return (
     <section id="project-list">
       <h2>All Projects</h2>

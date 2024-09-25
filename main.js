@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', loadProjects);*/
 
 
 
-document.addEventListener('DOMContentLoaded', async () => {
+/*document.addEventListener('DOMContentLoaded', async () => {
     const projectListContainer = document.getElementById('Pro');
     const projectForm = document.getElementById('project-form');
 
@@ -136,4 +136,4 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.error('Error saving project:', error);
         }
     });
-});
+});*/
