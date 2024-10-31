@@ -2,7 +2,7 @@ import sqlite3 from 'sqlite3';
 import { open, Database } from 'sqlite';
 import { config } from 'dotenv';
 
-config(); // Load environment variables from .env
+config(); 
 
 let db: Database | null = null;
 
@@ -18,6 +18,6 @@ export const initializeDB = async (): Promise<Database> => {
   return db;
 };
 
-// Export the database type to use elsewhere
+
 export type DB = Database;
 export { db };

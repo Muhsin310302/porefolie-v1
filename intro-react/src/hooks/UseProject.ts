@@ -1,5 +1,3 @@
-// src/hooks/useProjects.ts
-
 import { useState, useEffect } from 'react';
 import { fetchProjects, addProject, deleteProject, updateProject } from '../services/service';
 import { Project } from '../schemas/schema';

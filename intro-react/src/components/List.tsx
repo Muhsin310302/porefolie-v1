@@ -1,4 +1,3 @@
-// src/components/List.tsx
 
 import React from 'react';
 import { format } from 'date-fns';
@@ -22,15 +21,11 @@ const List: React.FC<ListProps> = ({ projects = [], deleteProject, editProject }
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               Les mer
             </a>
-
-            {/* Display new fields */}
             {project.publishedAt && (
               <p>Published At: {format(new Date(project.publishedAt), 'dd MMM yyyy')}</p>
             )}
             <p>Public: {project.public ? 'Yes' : 'No'}</p>
             <p>Status: {project.status}</p>
-
-            {/* Defensive check for tags */}
             {project.tags ? (
               Array.isArray(project.tags) && project.tags.length > 0 ? (
                 <p>Tags: {project.tags.join(', ')}</p>

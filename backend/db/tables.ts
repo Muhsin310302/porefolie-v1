@@ -1,4 +1,3 @@
-// tables.ts
 
 import { Database } from 'sqlite';
 

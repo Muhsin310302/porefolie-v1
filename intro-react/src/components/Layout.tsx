@@ -1,4 +1,4 @@
-// src/components/Layout.tsx
+
 import React from 'react';
 
 type LayoutProps = {
@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <footer>
-        <p>&copy; 2024 Portfolio by Muhs</p>
+        <p>&copy; 2024 Portfolio by Muhsin Hashi</p>
       </footer>
     </div>
   );

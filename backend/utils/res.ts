@@ -1,4 +1,3 @@
-// src/utils/response.ts
 
 export type SuccessResponse<T> = {
     success: true;
@@ -19,13 +18,11 @@ export type SuccessResponse<T> = {
     };
   };
   
-  // Funksjon for å lage en suksessrespons
   export const success = <T>(data: T): SuccessResponse<T> => ({
     success: true,
     data,
   });
   
-  // Funksjon for å lage en feilrespons
   export const errorResponse = (
     code: string,
     message: string,

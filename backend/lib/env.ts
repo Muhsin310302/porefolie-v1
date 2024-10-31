@@ -1,5 +1,3 @@
-/*// backend/src/lib/env.ts
-
 import { z } from 'zod';
 import dotenv from 'dotenv';
 
@@ -12,6 +10,7 @@ const envSchema = z.object({
   DATABASE_URL: z.string(),
 });
 
+
 const parsedEnv = envSchema.safeParse(process.env);
 
 if (!parsedEnv.success) {
@@ -19,5 +18,5 @@ if (!parsedEnv.success) {
   process.exit(1);
 }
 
+
 export const env = parsedEnv.data;
-*/

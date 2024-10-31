@@ -1,4 +1,4 @@
-// src/components/Form.tsx
+
 
 import React, { useState, useEffect } from 'react';
 import { Project } from '../schemas/schema';
@@ -48,7 +48,7 @@ const Form: React.FC<FormProps> = ({ addProject, currentProject, editProject }) 
       addProject(newProject);
     }
 
-    // Reset form fields
+  
     setTitle('');
     setDescription('');
     setLink('');

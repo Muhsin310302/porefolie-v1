@@ -1,4 +1,4 @@
-// frontend/src/services/cApi.ts
+
 
 export const api = async (url: string, options: RequestInit = {}): Promise<any> => {
   try {

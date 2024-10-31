@@ -1,4 +1,3 @@
-// setup.ts
 
 import { initializeDB } from './db';
 import { createTables } from './tables';
